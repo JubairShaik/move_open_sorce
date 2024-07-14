@@ -1,0 +1,48 @@
+{
+  "name": "docuconvo",
+  "private": true,
+  "author": {
+    "name": "kunal00000",
+    "github": "https://github.com/kunal00000",
+    "url": "https://x.com/kunalvermax"
+  },
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "start": "turbo start",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx}\"",
+    "check": "prettier --check \"**/*.{ts,tsx}\""
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "prettier": "^3.1.1",
+    "turbo": "latest"
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "bracketSameLine": true,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "trailingComma": "none",
+    "semi": false,
+    "plugins": [
+      "@trivago/prettier-plugin-sort-imports"
+    ],
+    "importOrder": [
+      "^(react/(.*)$)|^(react$)",
+      "^(next/(.*)$)|^(next$)",
+      "<THIRD_PARTY_MODULES>",
+      "^types$",
+      "^@/*",
+      "^[./]"
+    ],
+    "importOrderSeparation": true
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=18"
+  }
+}

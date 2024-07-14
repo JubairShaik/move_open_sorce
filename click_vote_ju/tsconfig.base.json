@@ -1,0 +1,31 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@clickvote/angular": ["libs/angular-component/src/index.ts"],
+      "@clickvote/backend/*": ["apps/backend/*"],
+      "@clickvote/frontend/*": ["apps/frontend/*"],
+      "@clickvote/interfaces": ["libs/interfaces/src/index.ts"],
+      "@clickvote/nest-libraries": ["libs/nest-libraries/src/index.ts"],
+      "@clickvote/react": ["libs/react-component/src/index.ts"],
+      "@clickvote/validations": ["libs/validations/src/index.ts"],
+      "@clickvote/svelte-component": ["libs/svelte-component/src/index.ts"]
+    },
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules", "tmp"]
+}
