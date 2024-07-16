@@ -29,17 +29,7 @@ import {
   Tr,
   VStack,
 } from '@chakra-ui/react'
-import {
-  Page,
-  PageHeader,
-  Section,
-  SectionHeader,
-  Toolbar,
-  ToolbarButton,
-  Command,
-  ActiveFilter,
-  Beacon,
-} from '@saas-ui-pro/react'
+ 
 import {
   AppShell,
   FormLayout,
